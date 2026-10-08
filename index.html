@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="box" id="login">
+      <h1>🍔 Food Delivery</h1>
+
+      <input id="username" placeholder="Username" />
+
+      <input id="password" type="password" placeholder="Password" />
+
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="home" style="display: none">
+      <header>
+        <h1>🍴 Food Express</h1>
+      </header>
+
+      <div class="box">
+        <h2>Select Restaurant</h2>
+
+        <div class="restaurant" onclick="showMenu('pizza')">
+          🍕
+          <h3>Pizza House</h3>
+          <p>Pizza & Italian Food</p>
+        </div>
+
+        <div class="restaurant" onclick="showMenu('burger')">
+          🍔
+          <h3>Burger Point</h3>
+          <p>Burgers & Fries</p>
+        </div>
+
+        <div class="restaurant" onclick="showMenu('south')">
+          🍛
+          <h3>South Spice</h3>
+          <p>South Indian Food</p>
+        </div>
+
+        <div id="menu">
+          <h2>Menu</h2>
+
+          <input
+            id="search"
+            placeholder="Search food..."
+            onkeyup="searchFood()"
+          />
+
+          <div id="foodList"></div>
+        </div>
+
+        <div class="cart">
+          <h2>🛒 My Cart</h2>
+
+          <div id="cartItems">Cart is empty</div>
+
+          <h3>Total: ₹<span id="total">0</span></h3>
+
+          <h3>Mode of Payment</h3>
+
+          <select id="payment">
+            <option>UPI</option>
+
+            <option>Cash on Delivery</option>
+
+            <option>Debit Card</option>
+
+            <option>Credit Card</option>
+          </select>
+
+          <br />
+
+          <button onclick="placeOrder()">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

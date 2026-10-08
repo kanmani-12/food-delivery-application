@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+  background: #fff3e0;
+  margin: 0;
+}
+
+header {
+  background: orange;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.box {
+  width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px;
+}
+
+button {
+  padding: 9px 15px;
+  margin: 5px;
+  border: none;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.restaurant {
+  display: inline-block;
+  width: 40%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.food {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 10px;
+}
+
+.cart {
+  background: #fff8e1;
+  padding: 15px;
+  margin-top: 20px;
+}
