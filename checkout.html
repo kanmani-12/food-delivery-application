@@ -1,0 +1,4 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Checkout | QuickBite</title><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="logo" href="index.html">QuickBite</a><nav><a href="index.html">Home</a><a href="cart.html">Cart <span id="cart-count">0</span></a></nav></header>
+<main><h1>Checkout</h1><form id="checkout-form" class="checkout"><label>Full name<input name="name" required></label><label>Phone number<input name="phone" required pattern="[0-9]{10}" placeholder="10 digits"></label><label>Delivery address<textarea name="address" required></textarea></label><label>Payment method<select name="payment"><option>Cash on Delivery</option><option>UPI</option><option>Card</option></select></label><button>Place order</button></form><p id="form-error" class="error"></p></main><script src="app.js"></script></body></html>
